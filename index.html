@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicago Local News</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        <div class="header-content">
+            <h1>Chicago Local News</h1>
+            <p>Your daily source for local insights</p>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="index.html">Top News</a>
+                <a href="index.html">Categories</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="top-news-section">
+        <div class="top-news-left">
+                   <div id="top-news-titles"></div>
+        </div>
+        
+    </div>
+    
+        
+    </section>
+
+    <main id="main-body">
+        <aside id="sidebar">
+            <div class="search-right">
+                <input type="text" id="search-bar" class="search-input" placeholder="Search news..." onkeyup="filterNews()">
+            </div>
+            
+            <div class="sidebar">
+                <div id="slideshow-container">
+                    <img class="slideshow-image" src="/img/image1.png" alt="Slideshow Image">
+                    <img class="slideshow-image" src="/img/image2.png" alt="Slideshow Image">
+                    <img class="slideshow-image" src="/img/image3.png" alt="Slideshow Image">
+                    <img class="slideshow-image" src="/img/img4.png" alt="Slideshow Image">
+                </div>
+                <!-- Image slide show. -->
+            </div>
+
+            <div class="categories">
+                <h3>News Categories</h3>
+                <ul>
+                    <li><a href="#Business" onclick="filterByCategory('Business')">Business</a></li>
+                    <li><a href="#politics" onclick="filterByCategory('Politics')">Politics</a></li>
+                    <li><a href="#sports"  onclick="filterByCategory('Sports')">Sports</a></li>
+                    <li><a href="#weather" onclick="filterByCategory('Weather')">Weather</a></li>
+                </ul>
+            </div>
+
+         </aside>
+        <section id="content-area"></section>
+    </main>
+
+    <footer id="footer">
+        <p>&copy; 2024 Chicago Local News. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
